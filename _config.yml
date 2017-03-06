@@ -4,7 +4,7 @@ email: info@codecentric.de
 description: ""
 baseurl: "/drone-test-2/"
 url: "https://alenaul.github.io/drone-test-2/"
-title_description: "A dark blog theme for Jekyll focusing on a clear reading experience. Large text and a narrow body makes carte noire a gorgeous read. With excellent code snippet support and integrated tools such as AddThis and Disqus giving your Jekyll blog all the functionality your users expect."
+title_description: "This is a fun project to build an interactive drone, that has computer vision features, distance sensors and audio in and output."
 title_image: "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
 google_analytics: "UA-20365477-4"
 disqus_account: cartenoire
