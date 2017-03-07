@@ -1,14 +1,13 @@
 # Site settings
 title: "Computer Vision Drone"
 email: info@codecentric.de
-description:
-+++
+description.md:
 ## Goal
 This is a fun project to build an interactive drone.
  * that has computer vision features
  * that has distance sensors
  * that has audio in and output
-First flight:
+First flight
 
 [![A flight through our office](http://img.youtube.com/vi/rimVxTH05QE/0.jpg)](http://www.youtube.com/watch?v=rimVxTH05QE)
 
@@ -34,7 +33,6 @@ We work at [codecentric] (https://www.codecentric.de/) in Karlsruhe and Hamburg,
 * [ToDos](https://trello.com/b/EyBRidZB/cv-drone)
 * [Sketching diagrams and mindmapping](https://sketchboard.me/rzUofJAoRqtE)
 * [Videos on youtube channel](https://www.youtube.com/channel/UC_r-M-0JQZUnOG2gJSL9pfg)
-+++
 baseurl: "/drone-test-2/"
 url: "https://alenaul.github.io/drone-test-2/"
 title_description: "Building an interactive computer vision drone."
