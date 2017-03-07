@@ -7,7 +7,7 @@ This is a fun project to build an interactive drone.
  * that has audio in and output
 First flight:
 
-(https://www.youtube.com/watch?v=rimVxTH05QE)
+[![A flight through our office](http://img.youtube.com/vi/rimVxTH05QE/0.jpg)](http://www.youtube.com/watch?v=rimVxTH05QE)
 
 The drone should be able to ...
 
