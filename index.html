@@ -15,13 +15,14 @@ make-smaller-titles: true
 
             <h1 class="header author-header" itemprop="headline">{{ site.title }}</h1>
 
-            <div class="container-fluid index">
+            <div class="author-text">
                 {{ site.title_description }}
             </div>
 
             <div class="author-text">
-                {% include goal.md %}
+                {% for goal in site.include %}
             </div>
+                {% endfor %}
             
              {% include social_links.html %}
             
