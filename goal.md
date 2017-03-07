@@ -14,15 +14,15 @@ The drone should be able to ...
  * navigate inside a room and detect obstacles
  * find persons and detect faces
  * interact with persons
- ** talk to the person
- ** take a picture of the person
- ** interact with social media (e.g.)
+   * talk to the person
+   * take a picture of the person
+   * interact with social media (e.g.)
 
 ## Project Team, communication and Dev Environment
 We work at [codecentric] (https://www.codecentric.de/) in Karlsruhe and Hamburg, Germany. codecentric encourages every employee to start innovative projects and we have one day per week to work on them ... We are hiring ;)
 * Tobias Schaber [@tobiasschaber](https://twitter.com/tobiasschaber)
 * Raphael Manke
-* Michael Plümacher
+* Michael PlÃ¼macher
 * Andrey Skorikov
 * Oli Moser [@moseroli](https://twitter.com/moseroli) 
 
