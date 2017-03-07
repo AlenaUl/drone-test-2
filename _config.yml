@@ -1,7 +1,7 @@
 # Site settings
 title: "Computer Vision Drone"
 email: info@codecentric.de
-description: "./goal.md"
+description: "/goal.md"
 baseurl: "/drone-test-2/"
 url: "https://alenaul.github.io/drone-test-2/"
 title_description: "Building an interactive computer vision drone."
@@ -10,7 +10,7 @@ google_analytics: "UA-20365477-4"
 disqus_account: drone-test-2
 github_repository: https://alenaul.github.io/drone-test-2/
 addthis_id: ra-513c6fa83da6ec67
-post_limit: 5
+post_limit: 3
 
 # Social usernames/URLs
 twitter_username: 
