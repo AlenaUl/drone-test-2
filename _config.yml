@@ -1,10 +1,10 @@
 # Site settings
 title: "Computer Vision Drone"
 email: info@codecentric.de
-description: 123
+description: "./goal.md"
 baseurl: "/drone-test-2/"
 url: "https://alenaul.github.io/drone-test-2/"
-title_description: "1 Building an interactive computer vision drone."
+title_description: "Building an interactive computer vision drone."
 title_image: "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
 google_analytics: "UA-20365477-4"
 disqus_account: drone-test-2
