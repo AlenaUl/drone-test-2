@@ -263,12 +263,12 @@ ul {
 		font-size: 30px;
 
 		@media (min-width: $screen-sm-min) {
-			font-size: 42px;
+			font-size: 40px;
 			margin-top: 0px;
 		}
 
 		@media (min-width: $screen-md-min) {
-			font-size: 60px;
+			font-size: 40px;
 			margin-top: -20px;
 		}
 	}
@@ -844,8 +844,8 @@ ul {
 	div {
 		color: $light-medium;
 		text-align: center;
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 }
 
