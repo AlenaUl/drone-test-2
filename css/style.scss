@@ -259,12 +259,12 @@ ul {
 		font-family: 'Montserrat', sans-serif;
 		color: $light-blue;
 		margin-top: 0px;
-		padding-top: 20px;
-		font-size: 40px;
+		padding-top: 15px;
+		font-size: 30px;
 
 		@media (min-width: $screen-sm-min) {
-			font-size: 45px;
-			margin-top: 0px;
+			font-size: 50px;
+			margin-top: 10px;
 		}
 
 		@media (min-width: $screen-md-min) {
@@ -844,7 +844,7 @@ ul {
 	div {
 		color: $light-medium;
 		text-align: center;
-		margin-top: 0px;
+		margin-top: 10px;
 		margin-bottom: 0px;
 	}
 }
