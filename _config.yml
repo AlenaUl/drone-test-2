@@ -16,7 +16,7 @@ collections:
  _posts:
     foo: bar
     output: true
-   permalink: /drone-test-2/:path/:title.:output_ext
+   permalink: /https://alenaul.github.io/drone-test-2/:path/:title.:output_ext
 #defaults:
  #- scope:
    # path: ""
