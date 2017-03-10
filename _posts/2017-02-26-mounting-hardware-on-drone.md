@@ -3,14 +3,14 @@
 We want to mount the PI, the mainboard and some sensors on the drone - in a stable and robust manner. 
 It's not as easy as we thought..
 
-![header](../media/header_plate.jpg)
+![header](./media/header_plate.jpg)
 
 ## Basic considerations
 
 At the beginning of our drone project, we wrote a 2D-simulator software to find out how many distance sensors
 are at least required for autonomous flying and in which angle to mount them ideally. 
 
-![area coverage with 3 sensors in 2D-simulation](../media/2D-sensor-simulator.png)
+![area coverage with 3 sensors in 2D-simulation](./media/2D-sensor-simulator.png)
 
 By this simulations, we came to the conclusion that two sensors mounted in a 45° angle are enough for basic 
 obstacle detection, but the results can be improved significantly by adding an additional upfront-looking sensor.
@@ -25,7 +25,7 @@ Our plan was to replace the original stilts with some new ones out of a 3D print
 the antenna, but also have some kind of engagement to mount the HC-SR04 distance sensor in a 45° angle. And that is what 
 came out of the printer (left side) in comparison with the original foot (right side):
 
-![comparison: original and self-print drone foot](../media/3dprint_compare.jpg)
+![comparison: original and self-print drone foot](./media/3dprint_compare.jpg)
 
 The base frame of the drone already has enough space for the wiring, so the first part was done.
 
@@ -36,7 +36,7 @@ because of two sensors and a fan pointing to the ground. so we decided to put al
 In order to do this we printed another plastic 3D object shaped like a saddle, fitting on the drone's storage battery. 
 And here is how it looks like:
 
-![3D print of the sattle mount](../media/3dprint_uppermount.jpg)
+![3D print of the sattle mount](./media/3dprint_uppermount.jpg)
 
 Our PI can now easily be screwed on this saddle, and the custom board will be plugged into the PI. We ran the sensor wires
 through the drone's head (no, it does not look so great, but the risk of cutting a wire by a rotor blade is much lower!) 
@@ -59,7 +59,7 @@ kill our PI, we need a way to supply the PI with energy. We will tell you on ano
 
 Especially in the printing direction of the synthetic fibres. 
 
-![3D parts breaking in fibre direction](../media/3dprint_breaking_fibre.jpg)
+![3D parts breaking in fibre direction](./media/3dprint_breaking_fibre.jpg)
 
 We are now searching for other materials or printing 
 technologies to find a more suitable solution.
