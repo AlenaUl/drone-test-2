@@ -7,7 +7,7 @@ baseurl: "/drone-test-2"
 url: "https://alenaul.github.io/drone-test-2"
 title_description: "Building an interactive computer vision drone."
 title_image: 
-google_analytics: "UA-20365477-4"
+google_analytics:
 disqus_account: 
 github_repository: https://alenaul.github.io/drone-test-2
 addthis_id: ra-513c6fa83da6ec67
@@ -15,7 +15,7 @@ post_limit: 3
 collections:
   posts:
     output: true
-    permalink: /:title:output_ext
+    permalink: ./:title:output_ext
     scope:
       path: ""
       type: posts
