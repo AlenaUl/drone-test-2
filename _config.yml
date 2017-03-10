@@ -21,8 +21,8 @@ defaults:
  - scope:
     path: ""
     type: _posts
-     values:
-       layout: page
+  values:
+    layout: page
 
 # Social usernames/URLs
 twitter_username: moseroli
