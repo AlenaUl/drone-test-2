@@ -1,5 +1,5 @@
 # Site settings
-#encoding: UTF-8
+encoding: UTF-8
 title: "Computer Vision Drone"
 email: info@codecentric.de
 description: 
@@ -15,7 +15,7 @@ post_limit: 3
 collections:
 - _posts
    # foo: bar
-    output: true
+   # output: true
     permalink: /drone-test-2/:path/:title.:output_ext
 defaults:
 - scope:
