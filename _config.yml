@@ -6,7 +6,7 @@ description:
 baseurl: "/drone-test-2/"
 url: "https://alenaul.github.io/drone-test-2/"
 title_description: "Building an interactive computer vision drone."
-title_image: "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
+title_image: 
 google_analytics: "UA-20365477-4"
 disqus_account: drone-test-2
 github_repository: https://alenaul.github.io/drone-test-2/
