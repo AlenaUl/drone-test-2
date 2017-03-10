@@ -4,7 +4,7 @@
 
 Besides the acoustic sensors, we need some other components connected to our PI. We created a small mainboard for that.
 
-![header](./media/header_perfboard.jpg)
+![header](../media/header_perfboard.jpg)
 
 ## Required components
 
@@ -24,7 +24,7 @@ Finally, we want to start the drone not only by SSH but also by a simple physica
 ## Planning the mainboard
 We are short on experience with electrical engineering, so we decided to build the mainboard on a simple perfboard or stripboard. We used [Fritzing](http://fritzing.org) to plan the board, and that is what came out:
 
-![layout](./media/layout_mainboard.jpg)
+![layout](../media/layout_mainboard.jpg)
 
 With this layout we can add all the required components and there is still some space left for future components.
 Please note that there of course are interruptions required between the two main connector lines, and between the three connectors on the left side, which are not visible here! Otherwise this could lead to an electrical short and kill the PI.
@@ -36,11 +36,11 @@ If you want to build a board yourself, please be careful and perform some intens
 
 We started to prepare the stripboard with a box cutter. We had to be very tender, because the strips can easily break by accident. That worked well, and after testing that all parts were completely disconnected, we continued with removing the bigger parts with a small driller. We then added the resistors, jacks and all the other components and performed an extensive test of the board. After that, the board was ready to use:
 
-![mainboard](./media/mainboard.jpg)
+![mainboard](../media/mainboard.jpg)
 
 We soldered the 40-pin jack (the one which will be connected with the PI) head first to have the plain layer (without copper) on top, so the mounted parts became visible and easy to reach. After mounting the board on our PI, it looks like this:
 
-![mounted mainboard](./media/mainboard_mounted.jpg)
+![mounted mainboard](../media/mainboard_mounted.jpg)
 
 ## Next steps
 
