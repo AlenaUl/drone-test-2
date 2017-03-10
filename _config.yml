@@ -15,7 +15,7 @@ post_limit: 3
 collections:
   posts:
     output: true
-    permalink: /drone-test-2/:title.:output_ext
+    permalink: /:title:output_ext
     scope:
       path: ""
       type: posts
