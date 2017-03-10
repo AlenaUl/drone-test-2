@@ -17,8 +17,8 @@ collections:
     output: true
    permalink: /drone-test-2/:path/:title.:output_ext
 defaults:
- - scope:
-   # path: ""
+ #- scope:
+    path: ""
     type: posts
   values:
     layout: page
