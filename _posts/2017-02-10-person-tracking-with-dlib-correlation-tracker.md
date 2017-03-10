@@ -23,7 +23,7 @@ we included a method, that checks if the tracked ROI (region of interest) contai
 the tracker is resetted.
 
 OpenCV comes with a variety of tracking methods including "BOOSTING", "TLD" and other 
-popular tracking methods. We found that the implementation of dlib (http://dlib.net) is 
+popular tracking methods. We found that the implementation of [dlib] (http://dlib.net) is 
 fast and gives best out of the box results.
 
 Check out the test code for the [correlation tracker](../src/python/correlation-tracker.py)
