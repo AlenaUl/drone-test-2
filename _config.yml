@@ -19,9 +19,9 @@ collections:
    permalink: /drone-test-2/:path/:title.:output_ext
 defaults:
  - scope:
-    path: ""
-    type: _posts
-  values:
+     path: ""
+     type: _posts
+ - values:
     layout: page
 
 # Social usernames/URLs
