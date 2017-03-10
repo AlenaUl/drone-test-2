@@ -21,7 +21,7 @@ defaults:
  - scope:
      path: ""
      type: _posts
- - values:
+ # values:
     layout: page
 
 # Social usernames/URLs
