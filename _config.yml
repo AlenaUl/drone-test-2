@@ -13,10 +13,10 @@ github_repository: https://alenaul.github.io/drone-test-2
 addthis_id: ra-513c6fa83da6ec67
 post_limit: 3
 collections:
- _posts:
+ - _posts:
     foo: bar
     output: true
-   permalink: /https://alenaul.github.io/drone-test-2/:path/:title.:output_ext
+   permalink: /drone-test-2/:path/:title.:output_ext
 #defaults:
  #- scope:
    # path: ""
