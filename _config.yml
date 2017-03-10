@@ -12,16 +12,15 @@ disqus_account:
 github_repository: https://alenaul.github.io/drone-test-2
 addthis_id: ra-513c6fa83da6ec67
 post_limit: 3
-#collections:
- #- posts:
-   # output: true
- #  permalink: /drone-test-2/:path/:title.:output_ext
-#defaults:
- #- scope:
-   # path: ""
-   # type: posts
- # values:
-   # layout: page
+collections:
+  posts:
+    output: true
+    permalink: /drone-test-2/:path/:title.:output_ext
+    scope:
+      path: ""
+      type: posts
+    values:
+    layout: page
 
 # Social usernames/URLs
 twitter_username: moseroli
