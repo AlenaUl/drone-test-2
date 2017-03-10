@@ -1,5 +1,5 @@
 # Site settings
-encoding: ENCODING
+#encoding: ENCODING
 title: "Computer Vision Drone"
 email: info@codecentric.de
 description: 
