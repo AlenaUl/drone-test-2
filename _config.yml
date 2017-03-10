@@ -22,7 +22,7 @@ defaults:
      path: ""
      type: _posts
  # values:
-    layout: page
+    #layout: page
 
 # Social usernames/URLs
 twitter_username: moseroli
