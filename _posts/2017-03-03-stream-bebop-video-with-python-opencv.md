@@ -63,7 +63,7 @@ sudo tcpdump -s0 -w /tmp/drone.cap
 Examine with wireshark:
 
 Reference-style: 
-![check RTP stream wit wireshark](../media/wireshark.png)
+![check RTP stream wit wireshark](./media/wireshark.png)
 
 Once the drone is sending data to your client you need an SDP file. The bebop does not 
 implement RTSP so we need to provide meta-information for the stream with that file.
