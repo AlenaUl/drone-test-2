@@ -17,12 +17,12 @@ collections:
     foo: bar
     output: true
    permalink: /drone-test-2/:path/:title.:output_ext
-defaults:
- - scope:
-    path: ""
-    type: _posts
-      values:
-        layout: page
+#defaults:
+ #- scope:
+   # path: ""
+   # type: _posts
+    #  values:
+     #   layout: page
 
 # Social usernames/URLs
 twitter_username: moseroli
