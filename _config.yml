@@ -19,10 +19,10 @@ collections:
    permalink: /drone-test-2/:path/:title.:output_ext
 defaults:
  - scope:
-   # path: ""
-   # type: _posts
-    #  values:
-     #   layout: page
+    path: ""
+    type: _posts
+     values:
+       layout: page
 
 # Social usernames/URLs
 twitter_username: moseroli
