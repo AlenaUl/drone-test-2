@@ -1,0 +1,24 @@
+---
+layout: default
+make-smaller-titles: true
+---
+
+
+<div class="container-fluid index">
+  <div class="row index opencv-python-examples">
+
+    <h1 class="header author-header">{{ site.author_name }}</h1>
+    <h2 class="header" itemprop="headline">Opencv Python Examples</h2>
+
+      {% for post in site.opencv-python-examples %}
+      
+        <ul>
+          <li>
+            <a href="{{ opencv-python-examples.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </li>
+        </ul>
+    </div>
+ </div>
+    <div class="col-md-12 content-panel">
+    </div>
+
