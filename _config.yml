@@ -24,10 +24,10 @@ collections:
 collections:
   opencv-python-examples:
     output: true
-    permalink: ./:posts/:title:output_ext
+    permalink: ./:title:output_ext
     scope:
       path: ""
-      type: posts
+      type: opencv-python-examples
     values:
     layout: page
 
