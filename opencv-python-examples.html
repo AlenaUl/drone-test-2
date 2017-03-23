@@ -12,13 +12,13 @@ make-smaller-titles: true
     
       
     
-    <!--{% for post in site.opencv-python-examples %}
+  {% for post in site.opencv-python-examples %}
     
       <div class="col-md-12 content-panel articles">
         <ul>
           <li>
             <a href="{{ opencv-python-examples.url | prepend: site.baseurl }}">{{ opencv-python-examples.title }}</a>
-            <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small> post.date | date: "%B %-d, %Y"
+            <!--<small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small> post.date | date: "%B %-d, %Y"-->
           </li>
         </ul>
     </div>
@@ -26,9 +26,9 @@ make-smaller-titles: true
     {% endfor %}
          
    </div>
-</div>-->
+</div>
     
-    {% for post in site.posts %}
+    <!--{% for post in site.posts %}
       {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %} 
       {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %} 
 
@@ -40,7 +40,7 @@ make-smaller-titles: true
 
           <li>
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small> <!--post.date | date: "%B %-d, %Y"-->
+            <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small> <!--post.date | date: "%B %-d, %Y"
           </li>
       {% if forloop.last %}
         </ul>
@@ -58,5 +58,5 @@ make-smaller-titles: true
     {% endfor %}
      
         </div>
-     </div>
+     </div>-->
    
