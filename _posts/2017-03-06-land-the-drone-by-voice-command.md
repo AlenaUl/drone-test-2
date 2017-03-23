@@ -1,5 +1,7 @@
 # Land the drone by voice-command
 
+[there](./_posts/2017-02-02-opencv-cheat-sheet.md)
+
 For interacting with the drone there should be a way to communicate with the drone via speech. 
 At this point of the project, the connected raspberry pi has no connection to the internet. 
 Due to the lack of the internet connection, services like google speech api or amazon lex are no option. 
