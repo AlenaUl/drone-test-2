@@ -60,20 +60,20 @@ layout: default
       <div class="content-panel content">
 
         {% if page.series %}
-          This post is part of the series '{{ page.series }}':
+          This example is part of the series '{{ page.series }}':
           <ol class="series">
-          {% for apost in site.posts reversed %}
-            {% if page.series == apost.series %}
+          {% for aexamples in site.opencv-python-examples reversed %}
+            {% if page.series == aexamples.series %}
               <li>
-                {% if page.title == apost.title %}
+                {% if page.title == aexamples.title %}
                   {% assign nextpost = true %}
-                  {{ apost.title }}
+                  {{ aexamples.title }}
                 {% else %}
-                  {% if nextpost == true %}
-                    {% assign seriesnext = apost %}
+                  {% if nextexample == true %}
+                    {% assign seriesnext = aexamples %}
                   {% endif %}
                   {% assign nextpost = false %}
-                  <a href="{{ apost.url }}">{{ apost.title }}</a>
+                  <a href="{{ aexamples.url }}">{{ aexamples.title }}</a>
                 {% endif %}
               </li>
             {% endif %}
@@ -85,7 +85,7 @@ layout: default
 
         {% if page.series %}
           {% if seriesnext %}
-            <i>Next post in the series:</i> <a href="{{ seriesnext.url }}">{{ seriesnext.title }}</a>
+            <i>Next example in the series:</i> <a href="{{ seriesnext.url }}">{{ seriesnext.title }}</a>
           {% endif %}
         {% endif %}
 
@@ -135,20 +135,20 @@ layout: default
 
       {% if site.related_posts.length > 0 %}
       <div class="content-panel related clearfix">
-        {% for post in site.related_posts limit:1 %}
+        {% for post in site.related_opencv-python-examples limit:1 %}
         <div class="related-header">
-          <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+          <a href="{{ site.baseurl }}{{ example.url }}">Read More</a>
         </div>
           <div class="title">
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ site.baseurl }}{{ example.url }}">{{ example.title }}</a>
           </div>
           <div class="excerpt">
-             {% if post.summary %}
-              {{ post.summary | strip_html | truncatewords:30 }}
+             {% if example.summary %}
+              {{ example.summary | strip_html | truncatewords:30 }}
              {% else %}
-              {{ post.excerpt | strip_html | truncatewords:30 }}
+              {{ example.excerpt | strip_html | truncatewords:30 }}
              {% endif %}
-            <a href="{{ site.baseurl }}{{ post.url }}">Continue Reading</a>
+            <a href="{{ site.baseurl }}{{ example.url }}">Continue Reading</a>
           </div>
         {% endfor %}
         <hr />
