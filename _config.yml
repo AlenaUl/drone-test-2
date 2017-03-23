@@ -22,9 +22,9 @@ collections:
     values:
     layout: page
 collections:
-   opencv-python-examples:
+  opencv-python-examples:
     output: true
-    permalink: ./:title:output_ext
+    permalink: ./:posts/:title:output_ext
     scope:
       path: ""
       type: opencv-python-examples
