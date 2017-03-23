@@ -5,34 +5,23 @@ make-smaller-titles: true
 
 
 <div class="container-fluid index">
-  <div class="row index all-posts">
+  <div class="row index opencv-python-examples">
 
     <h1 class="header author-header">{{ site.author_name }}</h1>
     <h2 class="header" itemprop="headline">Opencv Python Examples</h2>
     
       {% for post in site.opencv-python-examples %}
-
-      {% if forloop.first %}
+    
       <div class="col-md-12 content-panel articles">
         <ul>
-      {% endif %}
-
           <li>
-            <a href="{{ opencv-python-examples.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <a href="{{ opencv-python-examples.url | prepend: site.baseurl }}">{{ opencv-python-examples.title }}</a>
             <!--<small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small> post.date | date: "%B %-d, %Y"-->
           </li>
-      {% if forloop.last %}
         </ul>
-      </div>
-         
-        <div class="col-md-12 content-panel articles">
-          <!--<h2 id="{{ next_year }}-ref">{{next_year}}</h2>-->
-          <ul>
-      {% endif %}
+    </div>
 
     {% endfor %}
-          
-            </div>
-          </div>
-    </div>
-  </div>
+         
+   </div>
+</div>
