@@ -30,7 +30,7 @@ make-smaller-titles: true
 
             <div class="articles">
 
-              <h2><a href="{{ post.url | prepend: site.baseurl }}">Latest Articles</a></h2>
+              <h2>Latest Articles</h2>
 
               <ul>
                   {% for post in site.posts limit: site.post_limit %}
@@ -49,7 +49,7 @@ make-smaller-titles: true
 		</ul>
 		<ul>
                   <li>
-                      <small><i><a href="{{ site.baseurl }}/opencv-python-examples/2017-02-02-opencv-cheat-sheet.md"><h2>Opencv Python Examples</h2></a></i></small>
+                      <small><i><h2><a href="{{ site.baseurl }}/opencv-python-examples/">Opencv Python Examples</a></h2></i></small>
                   </li>
               </ul>
         </div>
