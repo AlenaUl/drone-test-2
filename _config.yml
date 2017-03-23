@@ -21,6 +21,7 @@ collections:
       type: posts
     values:
     layout: page
+collections:
    opencv-python-examples:
     output: true
     permalink: ./:title:output_ext
