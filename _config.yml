@@ -21,6 +21,14 @@ collections:
       type: posts
     values:
     layout: page
+   opencv-python-examples:
+    output: true
+    permalink: ./:title:output_ext
+    scope:
+      path: ""
+      type: opencv-python-examples
+    values:
+    layout: page
 
 # Social usernames/URLs
 twitter_username: 
@@ -34,6 +42,7 @@ xing_link:
 facebook_link:
 
 # Footer
+footer_left: "<a href=\"https://www.codecentric.de\">Impressum</a>"
 footer_right: "&lt;/&gt; on <a href=\"https://github.com/codecentric/computer-vision-drone\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
