@@ -355,19 +355,6 @@ ul {
 		a:hover {
 			color: $light-blue;
 		}
-		
-		a2, a2:active {
-			color: $light-blue;
-			white-space: nowrap;
-			margin-bottom: 30px;
-			font-size: 26px;
-		}
-
-		a2:hover {
-			color: $light-blue;
-			margin-bottom: 30px;
-			font-size: 26px;
-		}
 	}
 
 	.copyright {
@@ -378,11 +365,6 @@ ul {
 	.links {
 		a, a:active {
 			color: #FFFFFF;
-		}
-		a2, a2:active {
-			color: $light-blue;
-			margin-bottom: 30px;
-			font-size: 26px;
 		}
 	}
 
