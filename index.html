@@ -10,8 +10,8 @@ make-smaller-titles: true
         <div class="col-md-12 main content-panel">
   
         	<div class="gravatar">  
-            <img src="header3.png" height="170" width="640" alt="{{ site.title }}" />
-			</div>           
+            		<img src="header3.png" height="170" width="640" alt="{{ site.title }}" />
+		</div>           
            
             <h1 class="header author-header" itemprop="headline">{{ site.title }}</h1>
 
@@ -30,7 +30,7 @@ make-smaller-titles: true
 
             <div class="articles">
 
-              <h2>Latest Articles</h2>
+              <h2><a href="{{ post.url | prepend: site.baseurl }}">Latest Articles</a></h2>
 
               <ul>
                   {% for post in site.posts limit: site.post_limit %}
@@ -38,9 +38,7 @@ make-smaller-titles: true
                       <li>
                           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 
-                         <!--<small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>-->  
-
-                          <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small> <!--post.date | date: "%B %-d, %Y"-->
+                          <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small> 
 
                       </li>
 
@@ -48,12 +46,10 @@ make-smaller-titles: true
                   <li>
                       <small><i><a href="{{ site.baseurl }}/posts/">more...</a></i></small>
                   </li>
-              </ul>
-
-            </div>	  
-              <ul>
+		</ul>
+		<ul>
                   <li>
-                      <small align="center"><i><a href="{{ site.baseurl }}/opencv-python-examples/2017-02-02-opencv-cheat-sheet.md"><h2>Opencv Python Examples</h2></a></i></small>
+                      <small><i><a href="{{ site.baseurl }}/opencv-python-examples/2017-02-02-opencv-cheat-sheet.md"><h2>Opencv Python Examples</h2></a></i></small>
                   </li>
               </ul>
         </div>
