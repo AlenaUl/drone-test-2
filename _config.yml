@@ -21,14 +21,6 @@ collections:
       type: posts
     values:
     layout: page
-  examples:
-    output: true
-    permalink: ./:title:output_ext
-    scope:
-      path: "_pages/opencv-python-examples"
-      type: posts
-    values:
-    layout: page
 
 # Social usernames/URLs
 twitter_username: 
@@ -61,5 +53,5 @@ defaults:
   - scope:
       path: '_pages/opencv-python-examples'
     values:
-      layout: 'python-examples'
+      layout: 'opencv-python-examples'
       type: 'opencv-python-examples'
