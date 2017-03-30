@@ -4,8 +4,8 @@ layout: default
 
 <div class="container-fluid single">
 
-  <div class="gravatar" align="middle">  
- 	<img src="./header3.png" height="170" width="690" alt="{{ site.title }}" />
+  <div class="gravatar" align="middle">
+	<img src="./header3.png" height="170" width="690" alt="{{ site.title }}" />
   </div>
 	
   <div class="row">
@@ -22,37 +22,10 @@ layout: default
       {% endif %}
 
       <h1 class="header" itemprop="name">{{ post.title }}</h1>
-
-      <!--<div class="author">
-        <small><i>
-          {% if post.author %}
-          by
-          <span itemprop="author">
-            {% if site.google_plus_link %}
-              <a rel="author" href="{{ site.google_plus_link }}">
-            {% endif %}
-            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">{{ post.author }}</span>
-            </span>
-            {% if site.google_plus_link %}
-              </a>
-            {% endif %}
-          </span>
-          {% endif %}
-          on <span itemprop="datePublished" content="2014-08-28">{{ post.date | date: "%B %-d, %Y" }}</span> 
-          {% if post.categories != empty %} under {% for category in post.categories limit:1 %}{{ category }}{% endfor %}{% endif %}
-        </i></small>
-      </div>-->
-
-      <!--<div class="read-time">
-        <small>
-          {{ minutes }} minute read
-        </small>
-      </div>-->
-
+	    
       <div class="content-panel content">
 
-        {% if post.series %}
+       <!-- {% if post.series %}
           This post is part of the series '{{ post.series }}':
           <ol class="series">
           {% for apost in site.pages reversed %}
@@ -72,15 +45,15 @@ layout: default
             {% endif %}
           {% endfor %}
           </ol>
-        {% endif %}
+        {% endif %}-->
 
         <span itemprop="articleBody">{{ content }}</span>
 
-        {% if post.series %}
+       <!-- {% if post.series %}
           {% if seriesnext %}
             <i>Next post in the series:</i> <a href="{{ seriesnext.url }}">{{ seriesnext.title }}</a>
           {% endif %}
-        {% endif %}
+        {% endif %}-->
 
         {% if site.addthis_id %}
         <div class="share">
