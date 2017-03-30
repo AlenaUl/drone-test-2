@@ -55,3 +55,4 @@ defaults:
     values:
       layout: 'python-examples'
       type: 'opencv-python-examples'
+      permalink: ./:title:output_ext
