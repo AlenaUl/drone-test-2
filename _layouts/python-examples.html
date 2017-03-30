@@ -2,10 +2,17 @@
 layout: default
 ---
 
+{% if page.minutes %}
+  {% assign minutes = page.minutes %}
+{% else %}
+  {% assign minutes = content | number_of_words | divided_by: 180 %}
+  {% if minutes == 0 %}{% assign minutes = 1 %}{% endif %}
+{% endif %}
+
 <div class="container-fluid single">
 
-  <div class="gravatar" align="middle">
-	<img src="header3.png" height="170" width="690" alt="{{ site.title }}" />
+  <div class="gravatar" align="middle">  
+ 	<img src="header3.png" height="170" width="690" alt="{{ site.title }}" />
   </div>
 	
   <div class="row">
@@ -21,17 +28,44 @@ layout: default
       </div>
       {% endif %}
 
-      <h1 class="header" itemprop="name">{{ post.title }}</h1>
-	    
+      <h1 class="header" itemprop="name">{{ page.title }}</h1>
+
+      <div class="author">
+        <small><i>
+          {% if page.author %}
+          by
+          <span itemprop="author">
+            {% if site.google_plus_link %}
+              <a rel="author" href="{{ site.google_plus_link }}">
+            {% endif %}
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span itemprop="name">{{ page.author }}</span>
+            </span>
+            {% if site.google_plus_link %}
+              </a>
+            {% endif %}
+          </span>
+          {% endif %}
+          on <span itemprop="datePublished" content="2014-08-28">{{ page.date | date: "%B %-d, %Y" }}</span> 
+          {% if page.categories != empty %} under {% for category in page.categories limit:1 %}{{ category }}{% endfor %}{% endif %}
+        </i></small>
+      </div>
+
+      <div class="read-time">
+        <small>
+          {{ minutes }} minute read
+        </small>
+      </div>
+
       <div class="content-panel content">
 
-       <!-- {% if post.series %}
-          This post is part of the series '{{ post.series }}':
+        {% if page.series %}
+          This post is part of the series '{{ page.series }}':
           <ol class="series">
           {% for apost in site.pages reversed %}
-            {% if post.series == apost.series %}
+            {% if page.series == apost.series %}
               <li>
-                {% if post.title == apost.title %}
+                {% if page.title == apost.title %}
                   {% assign nextpost = true %}
                   {{ apost.title }}
                 {% else %}
@@ -45,15 +79,15 @@ layout: default
             {% endif %}
           {% endfor %}
           </ol>
-        {% endif %}-->
+        {% endif %}
 
         <span itemprop="articleBody">{{ content }}</span>
 
-       <!-- {% if post.series %}
+        {% if page.series %}
           {% if seriesnext %}
             <i>Next post in the series:</i> <a href="{{ seriesnext.url }}">{{ seriesnext.title }}</a>
           {% endif %}
-        {% endif %}-->
+        {% endif %}
 
         {% if site.addthis_id %}
         <div class="share">
@@ -62,11 +96,11 @@ layout: default
         </div>
         {% endif %}
 
-        {% if post.tags and post.tags.size > 0 %}
+        {% if page.tags and page.tags.size > 0 %}
         <div class="tags">
           <small>
           <i class="fa fa-tags"></i>
-            {{ post.tags | join: ', ' }}
+            {{ page.tags | join: ', ' }}
           </small>
         </div>
         {% endif %}
@@ -99,14 +133,14 @@ layout: default
       </div>
       {% endif %}
 
-      {% if site.related_pages.length > 0 %}
+      {% if site.related_posts.length > 0 %}
       <div class="content-panel related clearfix">
-        {% for post in site.pages limit:1 %}
+        {% for post in site.related_posts limit:1 %}
         <div class="related-header">
           <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
         </div>
           <div class="title">
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
           </div>
           <div class="excerpt">
              {% if post.summary %}
@@ -114,24 +148,24 @@ layout: default
              {% else %}
               {{ post.excerpt | strip_html | truncatewords:30 }}
              {% endif %}
-            <a href="{{ post.url | prepend: site.baseurl }}">Continue Reading</a>
+            <a href="{{ site.baseurl }}{{ post.url }}">Continue Reading</a>
           </div>
         {% endfor %}
         <hr />
         <div class="previous previous-next">
-          {% if post.previous %}
+          {% if page.previous %}
           <p>
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.previous.title }}</a>
+            <a href="{{ site.baseurl }}{{ page.previous.url }}">{{ page.previous.title }}</a>
           </p>
-          <p class="date">Published {{ post.previous.date | date: "%B %-d, %Y" }}</p> <!---->
+          <p class="date">Published {{ page.previous.date | date: "%B %-d, %Y" }}</p> <!---->
           {% endif %}
         </div>
         <div class="next previous-next">
-          {% if post.next %}
+          {% if page.next %}
           <p>
-            <a href="{{ site.baseurl }}{{ post.next.url }}">{{ post.next.title }}</a>
+            <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}</a>
           </p>
-          <p class="date">Published {{ post.next.date | date: "%B %-d, %Y" }}</p> <!---->
+          <p class="date">Published {{ page.next.date | date: "%B %-d, %Y" }}</p> <!---->
           {% endif %}
         </div>
       </div>
