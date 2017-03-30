@@ -12,7 +12,7 @@ layout: default
 <div class="container-fluid single">
 
   <div class="gravatar" align="middle">  
- 	<img src="{{ site.image }}" height="170" width="690" alt="{{ site.title }}" />
+ 	<img src="./header3.png" height="170" width="690" alt="{{ site.title }}" />
   </div>
 	
   <div class="row">
@@ -28,26 +28,26 @@ layout: default
       </div>
       {% endif %}
 
-      <h1 class="header" itemprop="name">{{ page.title }}</h1>
+      <h1 class="header" itemprop="name">{{ post.title }}</h1>
 
       <div class="author">
         <small><i>
-          {% if page.author %}
+          {% if post.author %}
           by
           <span itemprop="author">
             {% if site.google_plus_link %}
               <a rel="author" href="{{ site.google_plus_link }}">
             {% endif %}
             <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">{{ page.author }}</span>
+              <span itemprop="name">{{ post.author }}</span>
             </span>
             {% if site.google_plus_link %}
               </a>
             {% endif %}
           </span>
           {% endif %}
-          on <span itemprop="datePublished" content="2014-08-28">{{ page.date | date: "%B %-d, %Y" }}</span> 
-          {% if page.categories != empty %} under {% for category in page.categories limit:1 %}{{ category }}{% endfor %}{% endif %}
+          on <span itemprop="datePublished" content="2014-08-28">{{ post.date | date: "%B %-d, %Y" }}</span> 
+          {% if post.categories != empty %} under {% for category in post.categories limit:1 %}{{ category }}{% endfor %}{% endif %}
         </i></small>
       </div>
 
@@ -59,35 +59,35 @@ layout: default
 
       <div class="content-panel content">
 
-        <!--{% if page.series %}
-          This page is part of the series '{{ page.series }}':
+        {% if post.series %}
+          This post is part of the series '{{ post.series }}':
           <ol class="series">
-          {% for apage in site.pages reversed %}
-            {% if page.series == apage.series %}
+          {% for apost in site.pages reversed %}
+            {% if post.series == apost.series %}
               <li>
-                {% if page.title == apage.title %}
+                {% if post.title == apost.title %}
                   {% assign nextpost = true %}
-                  {{ apage.title }}
+                  {{ apost.title }}
                 {% else %}
-                  {% if nextpage == true %}
-                    {% assign seriesnext = apage %}
+                  {% if nextpost == true %}
+                    {% assign seriesnext = apost %}
                   {% endif %}
-                  {% assign nextpage = false %}
-                  <a href="{{ apage.url }}">{{ apage.title }}</a>
+                  {% assign nextpost = false %}
+                  <a href="{{ apost.url }}">{{ apost.title }}</a>
                 {% endif %}
               </li>
             {% endif %}
           {% endfor %}
           </ol>
-        {% endif %}-->
+        {% endif %}
 
         <span itemprop="articleBody">{{ content }}</span>
 
-        <!--{% if page.series %}
+        {% if post.series %}
           {% if seriesnext %}
-            <i>Next page in the series:</i> <a href="{{ seriesnext.url }}">{{ seriesnext.title }}</a>
+            <i>Next post in the series:</i> <a href="{{ seriesnext.url }}">{{ seriesnext.title }}</a>
           {% endif %}
-        {% endif %}-->
+        {% endif %}
 
         {% if site.addthis_id %}
         <div class="share">
@@ -96,18 +96,18 @@ layout: default
         </div>
         {% endif %}
 
-        {% if page.tags and page.tags.size > 0 %}
+        {% if post.tags and post.tags.size > 0 %}
         <div class="tags">
           <small>
           <i class="fa fa-tags"></i>
-            {{ page.tags | join: ', ' }}
+            {{ post.tags | join: ', ' }}
           </small>
         </div>
         {% endif %}
 
       </div>
 
-    <!--  {% if site.twitter_username and site.disqus_account %}
+      {% if site.twitter_username and site.disqus_account %}
       <div class="content-panel feedback">
         We <i class="fa fa-heart"></i> feedback.<br />
         Let us know what you think of this article on twitter <a href="http://www.twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a> or leave a comment below!
@@ -133,43 +133,43 @@ layout: default
       </div>
       {% endif %}
 
-      {% if site.related_posts.length > 0 %}
+      {% if site.related_pages.length > 0 %}
       <div class="content-panel related clearfix">
-        {% for page in site.pages limit:1 %}
+        {% for post in site.pages limit:1 %}
         <div class="related-header">
-          <a href="{{ site.baseurl }}{{ example.url }}">Read More</a>
+          <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
         </div>
           <div class="title">
-            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </div>
           <div class="excerpt">
-             {% if page.summary %}
-              {{ page.summary | strip_html | truncatewords:30 }}
+             {% if post.summary %}
+              {{ post.summary | strip_html | truncatewords:30 }}
              {% else %}
-              {{ page.excerpt | strip_html | truncatewords:30 }}
+              {{ post.excerpt | strip_html | truncatewords:30 }}
              {% endif %}
-            <a href="{{ page.url | prepend: site.baseurl }}">Continue Reading</a>
+            <a href="{{ post.url | prepend: site.baseurl }}">Continue Reading</a>
           </div>
         {% endfor %}
         <hr />
         <div class="previous previous-next">
-          {% if page.previous %}
+          {% if post.previous %}
           <p>
-            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.previous.title }}</a>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.previous.title }}</a>
           </p>
-          <p class="date">Published {{ page.previous.date | date: "%B %-d, %Y" }}</p> 
+          <p class="date">Published {{ post.previous.date | date: "%B %-d, %Y" }}</p> <!---->
           {% endif %}
         </div>
         <div class="next previous-next">
-          {% if page.next %}
+          {% if post.next %}
           <p>
-            <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}</a>
+            <a href="{{ site.baseurl }}{{ post.next.url }}">{{ post.next.title }}</a>
           </p>
-          <p class="date">Published {{ page.next.date | date: "%B %-d, %Y" }}</p> 
+          <p class="date">Published {{ post.next.date | date: "%B %-d, %Y" }}</p> <!---->
           {% endif %}
         </div>
       </div>
-      {% endif %}-->
+      {% endif %}
 
     </div>
 
@@ -177,7 +177,7 @@ layout: default
 
 </div>
 
-<!--{% if site.disqus_account %}
+{% if site.disqus_account %}
 <script type="text/javascript">
 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 function disqus_config() { this.experiment.enable_scroll_container = true; }
