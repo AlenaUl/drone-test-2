@@ -21,15 +21,6 @@ collections:
       type: posts
     values:
     layout: page
-collections:
-  opencv-python-examples:
-    output: true
-    permalink: ./opencv-python-examples/:title:output_ext
-    scope:
-      path: ""
-      type: opencv-python-examples
-    values:
-    layout: page
 
 # Social usernames/URLs
 twitter_username: 
@@ -48,10 +39,19 @@ footer_right: "&lt;/&gt; on <a href=\"https://github.com/codecentric/computer-vi
 
 # Build settings
 markdown: kramdown
+kramdown:
+  parse_block_html: 'true'
 
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
 permalink: pretty
+include: ['_pages', '.htaccess']
 exclude: [vendor]
+defaults:
+  - scope:
+      path: '_pages/opencv-python-examples'
+    values:
+      layout: 'opencv-python-examples'
+      type: 'opencv-python-examples'
