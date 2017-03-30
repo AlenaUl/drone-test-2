@@ -21,8 +21,6 @@ layout: default
       </div>
       {% endif %}
 
-      <h1 class="header" itemprop="name"><!--{{ page.title }}--></h1>
-
       <div class="content-panel content">
 
         <span itemprop="articleBody">{{ content }}</span>
@@ -71,7 +69,7 @@ layout: default
       </div>
       {% endif %}
 
-      {% if site.related_posts.length > 0 %}
+      {% if site.related_pages.length > 0 %}
       <div class="content-panel related clearfix">
         {% for post in site.related_pages %}
         <div class="related-header">
