@@ -15,9 +15,6 @@ make-smaller-titles: true
         <button class="btn btn-categories dropdown-toggle btn-xs" type="button" data-toggle="dropdown">Years
           <span class="caret"></span>
         </button>
-        <ul class="dropdown-menu">
-          <li><a href="{{ site.baseurl }}/posts-by-categories/">Categories</a></li>
-        </ul>
       </div>
 
     </small></h2>
@@ -33,7 +30,7 @@ make-smaller-titles: true
       {% endif %}
 
           <li>
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <a href="{{ opencv-python-examples.url | prepend: site.baseurl }}">{{ post.title }}</a>
             <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small> <!--post.date | date: "%B %-d, %Y"-->
           </li>
       {% if forloop.last %}
