@@ -1,4 +1,4 @@
-# Opencv read and save images
+# Read and save images
 
 ## Read image from disk
 
