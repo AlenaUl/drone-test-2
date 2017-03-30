@@ -53,3 +53,4 @@ defaults:
     values:
       layout: 'python-examples'
       type: 'opencv-python-examples'
+      image: header3.png
