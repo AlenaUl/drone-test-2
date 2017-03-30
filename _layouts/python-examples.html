@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: /opencv-python-examples/
 ---
 
 {% if page.minutes %}
@@ -13,7 +12,7 @@ permalink: /opencv-python-examples/
 <div class="container-fluid single">
 
   <div class="gravatar" align="middle">  
- 	<img src="header3.png" height="170" width="690" alt="{{ site.title }}" />
+ 	<img src="{{ site.image }}" height="170" width="690" alt="{{ site.title }}" />
   </div>
 	
   <div class="row">
@@ -60,7 +59,7 @@ permalink: /opencv-python-examples/
 
       <div class="content-panel content">
 
-        {% if page.series %}
+        <!--{% if page.series %}
           This page is part of the series '{{ page.series }}':
           <ol class="series">
           {% for apage in site.pages reversed %}
@@ -80,15 +79,15 @@ permalink: /opencv-python-examples/
             {% endif %}
           {% endfor %}
           </ol>
-        {% endif %}
+        {% endif %}-->
 
         <span itemprop="articleBody">{{ content }}</span>
 
-        {% if page.series %}
+        <!--{% if page.series %}
           {% if seriesnext %}
             <i>Next page in the series:</i> <a href="{{ seriesnext.url }}">{{ seriesnext.title }}</a>
           {% endif %}
-        {% endif %}
+        {% endif %}-->
 
         {% if site.addthis_id %}
         <div class="share">
@@ -108,7 +107,7 @@ permalink: /opencv-python-examples/
 
       </div>
 
-      {% if site.twitter_username and site.disqus_account %}
+    <!--  {% if site.twitter_username and site.disqus_account %}
       <div class="content-panel feedback">
         We <i class="fa fa-heart"></i> feedback.<br />
         Let us know what you think of this article on twitter <a href="http://www.twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a> or leave a comment below!
@@ -158,7 +157,7 @@ permalink: /opencv-python-examples/
           <p>
             <a href="{{ page.url | prepend: site.baseurl }}">{{ page.previous.title }}</a>
           </p>
-          <p class="date">Published {{ page.previous.date | date: "%B %-d, %Y" }}</p> <!---->
+          <p class="date">Published {{ page.previous.date | date: "%B %-d, %Y" }}</p> 
           {% endif %}
         </div>
         <div class="next previous-next">
@@ -166,11 +165,11 @@ permalink: /opencv-python-examples/
           <p>
             <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}</a>
           </p>
-          <p class="date">Published {{ page.next.date | date: "%B %-d, %Y" }}</p> <!---->
+          <p class="date">Published {{ page.next.date | date: "%B %-d, %Y" }}</p> 
           {% endif %}
         </div>
       </div>
-      {% endif %}
+      {% endif %}-->
 
     </div>
 
@@ -178,7 +177,7 @@ permalink: /opencv-python-examples/
 
 </div>
 
-{% if site.disqus_account %}
+<!--{% if site.disqus_account %}
 <script type="text/javascript">
 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 function disqus_config() { this.experiment.enable_scroll_container = true; }
