@@ -3,7 +3,7 @@
 There are several options to rotate an image in opencv. The most convenient is probably using the 
 imutils library.
 
-## Rotate image using imutils
+### Rotate image using imutils
 
 The following code will rotate the image by 90 degrees:
 
@@ -16,7 +16,7 @@ rotated_image = imutils.rotate(image, 90)
 
 ```
 
-## Rotate image using warpAffine and rotation matrix
+### Rotate image using warpAffine and rotation matrix
 
 The following code will rotate the image by 45 degrees:
 
