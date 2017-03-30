@@ -1,4 +1,4 @@
-# Opencv Cheat Sheet
+# Opencv cheat sheet
 
 ## Getting Started with Images
 Import OpenCV and numpy
