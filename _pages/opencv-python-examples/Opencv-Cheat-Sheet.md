@@ -11,7 +11,7 @@ import numpy
 A condensed overview of the following can be found in the
 [Cheat Sheet](OpenCVCheatSheet.pdf)
 
-## basics
+## Basics
 
 [Read or save image](opencv-read-and-save-images.md) : ```cv2.imshow('name of window', img)```
 
