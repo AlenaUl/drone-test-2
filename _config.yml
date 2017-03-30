@@ -53,5 +53,5 @@ defaults:
   - scope:
       path: '_pages/opencv-python-examples'
     values:
-      layout: 'python-examples'
+      layout: 'opencv-python-examples'
       type: 'opencv-python-examples'
