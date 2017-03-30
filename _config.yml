@@ -49,7 +49,7 @@ include: ['_pages', '.htaccess']
 exclude: [vendor]
 defaults:
   - scope:
-      path: '/opencv-python-examples'
+      path: 'pages/opencv-python-examples'
     values:
       layout: 'opencv-cheat-sheet'
       type: 'opencv-python-examples'
