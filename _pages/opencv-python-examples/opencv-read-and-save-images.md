@@ -1,6 +1,6 @@
 # Read and save images
 
-## Read image from disk
+### Read image from disk
 
 ```python
 img = cv2.imread('path', flag)
@@ -24,7 +24,7 @@ if k == 27:
 
 ```delay``` is the lag in milliseconds, 0 means wait forever, ```& 0xff``` is needed on 64-Bit machines. if the esc-key is pressed (```k==27```) the opened window is destroyed. To be precise, ```cv2.destroyAllWindows()``` closes all open windows. A single named window can be closed with ```cv2.destroyWindow('name of window')```.
 
-## Save image to disk
+### Save image to disk
 
 ```python
 cv2.imwrite('path',img)
