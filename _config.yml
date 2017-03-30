@@ -24,7 +24,7 @@ collections:
 collections:
   opencv-python-examples:
     output: true
-    permalink: ./:title:output_ext
+    permalink: ./opencv-python-examples/:title:output_ext
     scope:
       path: ""
       type: opencv-python-examples
